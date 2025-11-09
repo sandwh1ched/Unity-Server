@@ -1,0 +1,9 @@
+[package]
+name = "core"
+description = "The Unity Server software core"
+authors = ["Sandwhiched <sandwh1ched.real@gmail.com>", "Unity Contributors"]
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+libunity = { version = "0.1.0", path = "../libunity" }

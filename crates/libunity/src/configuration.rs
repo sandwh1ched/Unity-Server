@@ -9,7 +9,7 @@ use thiserror::Error;
 use toml::de as deserialize;
 
 /// The path that the configuration file is at.
-pub static CONFIG_PATH: &str = "/etc/unity/config.toml";
+pub static CONFIG_PATH: &str = "/srv/unity/config.toml";
 /// Default apps path.
 pub static DEFAULT_APPS_PATH: &str = "/srv/unity/apps";
 
@@ -19,9 +19,9 @@ pub struct Configuration {
     /// If local time should be used in logs. Generally only recommended if
     /// you don't administrate multiple servers across timezones and you hate
     /// UTC. (UTC will be converted into local time in the frontend log viewer.)
-    use_local_time_in_logs: bool,
+    pub use_local_time_in_logs: bool,
     /// The directory Unity apps will be stored in.
-    apps_directory_path: PathBuf,
+    pub apps_directory_path: PathBuf,
 }
 
 impl Configuration {
