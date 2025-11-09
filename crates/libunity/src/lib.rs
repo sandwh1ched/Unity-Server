@@ -1,4 +1,7 @@
+/// TOML configuration file support.
 pub mod configuration;
+/// Unit tests.
+pub mod tests;
 
 /// The level at which a log message is.
 #[derive(Debug)]
