@@ -12,6 +12,7 @@ pub enum LogLevel {
 }
 
 /// Informative logging function for Unity Server.
+///
 /// # Parameters
 /// * `message` - The actual message.
 /// * `level` - The severity of the message.
@@ -29,7 +30,7 @@ pub enum LogLevel {
 pub fn log(message: &str, level: LogLevel, app: Option<&str>) {
     println!(
         "[{}] [{:?}] [{}] {}",
-        app.unwrap_or("Unity Core"),
+        app.unwrap_or("Unity"),
         level,
         chrono::Utc::now().format("%Y-%m-%dT%H:%M:%SZ"),
         message
