@@ -1,6 +1,7 @@
 [package]
 name = "libunity"
 description = "Unity Server API"
+authors = ["Sandwhiched <sandwh1ched.real@gmail.com>", "Unity Contributors"]
 version = "0.1.0"
 edition = "2024"
 
